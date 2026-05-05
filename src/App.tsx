@@ -1,9 +1,4 @@
-/**
- * @license
- * SPDX-License-Identifier: Apache-2.0
- */
-
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import LandingPage from './pages/LandingPage';
 import Dashboard from './pages/Dashboard';
 import VendorsPage from './pages/VendorsPage';
@@ -20,15 +15,16 @@ import CartAnimationContainer from './components/CartAnimationContainer';
 
 export default function App() {
   return (
-    <Router>
+    <>
       <Toaster position="top-right" expand={true} richColors />
       <NotificationWatcher />
       <CartAnimationContainer />
+
       <Routes>
-        {/* Public Landing Page */}
+        {/* Landing */}
         <Route path="/" element={<LandingPage />} />
-        
-        {/* Dashboard Pages */}
+
+        {/* Dashboard */}
         <Route element={<DashboardLayout />}>
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/vendors" element={<VendorsPage />} />
@@ -37,12 +33,12 @@ export default function App() {
           <Route path="/orders" element={<OrdersPage />} />
           <Route path="/orders/:id" element={<OrderTrackingPage />} />
           <Route path="/profile" element={<ProfilePage />} />
-          <Route path="/favorites" element={<VendorsPage />} /> {/* Reuse for now */}
+          <Route path="/favorites" element={<VendorsPage />} />
         </Route>
 
         {/* Fallback */}
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
-    </Router>
+    </>
   );
 }
