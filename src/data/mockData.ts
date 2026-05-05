@@ -1,0 +1,171 @@
+import { Vendor, FoodItem, Order, User } from '../types';
+
+export const mockUser: User = {
+  name: 'John Doe',
+  email: 'john.doe@upsa.edu.gh',
+  phone: '055 123 4567',
+  image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=200&auto=format&fit=crop',
+};
+
+export const mockVendors: Vendor[] = [
+  {
+    id: '1',
+    name: 'Foodies Corner',
+    image: 'https://images.unsplash.com/photo-1579751626657-72bc17010498?q=80&w=400&auto=format&fit=crop',
+    rating: 4.6,
+    reviewsCount: 124,
+    deliveryTime: '30-40 mins',
+    category: 'Pizza & More',
+    isFreeDelivery: true,
+    location: 'UPSA Main Campus',
+  },
+  {
+    id: '2',
+    name: 'Tasty Bites',
+    image: 'https://images.unsplash.com/photo-1550547660-d9450f859349?q=80&w=400&auto=format&fit=crop',
+    rating: 4.4,
+    reviewsCount: 89,
+    deliveryTime: '20-30 mins',
+    category: 'Burgers',
+    isFreeDelivery: true,
+    location: 'UPSA Main Campus',
+  },
+  {
+    id: '3',
+    name: 'Campus Meals',
+    image: 'https://images.unsplash.com/photo-1541518763531-4a71347d7b35?q=80&w=400&auto=format&fit=crop',
+    rating: 4.5,
+    reviewsCount: 56,
+    deliveryTime: '25-35 mins',
+    category: 'Local Dishes',
+    isFreeDelivery: false,
+    location: 'Near Library',
+  },
+  {
+    id: '4',
+    name: "Ama's Kitchen",
+    image: 'https://images.unsplash.com/photo-1604328701708-36fdfd5f6617?q=80&w=400&auto=format&fit=crop',
+    rating: 4.7,
+    reviewsCount: 42,
+    deliveryTime: '20-30 mins',
+    category: 'Traditional',
+    isFreeDelivery: true,
+    location: 'Central Cafeteria',
+  },
+  {
+    id: '5',
+    name: 'Great Meals',
+    image: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=400&auto=format&fit=crop',
+    rating: 4.3,
+    reviewsCount: 38,
+    deliveryTime: '35-45 mins',
+    category: 'Healthy',
+    isFreeDelivery: false,
+    location: 'UPSA Hostel Area',
+  },
+];
+
+export const mockFoodItems: FoodItem[] = [
+  {
+    id: 'f1',
+    vendorId: '1',
+    name: 'Jollof Rice',
+    price: 25.0,
+    image: 'https://images.unsplash.com/photo-1512058560366-cd242d45869d?q=80&w=400&auto=format&fit=crop',
+    category: 'Rice Dishes',
+    description: 'Classic jollof rice with grilled chicken and salad',
+  },
+  {
+    id: 'f2',
+    vendorId: '1',
+    name: 'Fried Rice',
+    price: 25.0,
+    image: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?q=80&w=400&auto=format&fit=crop',
+    category: 'Rice Dishes',
+    description: 'Delicious fried rice with chicken and vegetables',
+  },
+  {
+    id: 'f3',
+    vendorId: '1',
+    name: 'Waakye',
+    price: 20.0,
+    image: 'https://images.unsplash.com/photo-1543339308-43e59d6b73a6?q=80&w=400&auto=format&fit=crop',
+    category: 'Main Meals',
+    description: 'Waakye with wele stew, egg and vegetables',
+  },
+  {
+    id: 'f4',
+    vendorId: '1',
+    name: 'Banku with Tilapia',
+    price: 35.0,
+    image: 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?q=80&w=400&auto=format&fit=crop',
+    category: 'Main Meals',
+    description: 'Banku served with grilled tilapia and hot pepper',
+  },
+  {
+    id: 'f5',
+    vendorId: '1',
+    name: 'Chicken Wings',
+    price: 30.0,
+    image: 'https://images.unsplash.com/photo-1567620905732-2d1ec7bb7445?q=80&w=400&auto=format&fit=crop',
+    category: 'Snacks',
+    description: 'Spicy grilled chicken wings (6 pieces)',
+  },
+  {
+    id: 'f6',
+    vendorId: '1',
+    name: 'Kenkey with Fish',
+    price: 25.0,
+    image: 'https://images.unsplash.com/photo-1534080564617-64041b993356?q=80&w=400&auto=format&fit=crop',
+    category: 'Main Meals',
+    description: 'Kenkey with fried fish and pepper',
+  },
+];
+
+export const mockOrders: Order[] = [
+  {
+    id: 'ORD123456',
+    date: 'May 20, 2025',
+    time: '10:30 AM',
+    vendorName: 'Foodies Corner',
+    vendorId: '1',
+    status: 'Preparing',
+    total: 55.0,
+    estimatedDeliveryTime: '11:15 AM',
+    address: 'Hostel: Pentagon Block B, Room 304',
+    deliveryInstructions: 'Call me when you are at the gate',
+    items: [
+      { ...mockFoodItems[0], quantity: 1 },
+      { ...mockFoodItems[4], quantity: 1 }
+    ],
+  },
+  {
+    id: 'ORD123455',
+    date: 'May 18, 2025',
+    time: '12:15 PM',
+    vendorName: 'Tasty Bites',
+    vendorId: '2',
+    status: 'Delivered',
+    total: 40.0,
+    reviewed: false,
+    estimatedDeliveryTime: '12:45 PM',
+    items: [
+      { ...mockFoodItems[1], quantity: 1 },
+      { ...mockFoodItems[5], quantity: 1 }
+    ],
+  },
+  {
+    id: 'ORD123454',
+    date: 'May 15, 2025',
+    time: '01:45 PM',
+    vendorName: 'Campus Meals',
+    vendorId: '3',
+    status: 'Delivered',
+    total: 30.0,
+    reviewed: true,
+    estimatedDeliveryTime: '02:10 PM',
+    items: [
+      { ...mockFoodItems[2], quantity: 1 }
+    ],
+  },
+];
