@@ -200,7 +200,7 @@ export default function Dashboard() {
       <div className="relative h-44 gradient-hero rounded-[2rem] p-8 text-white flex justify-between items-center overflow-hidden shadow-vibrant">
         <div className="relative z-10">
           <span className="px-3 py-1 bg-white/20 rounded-full text-[10px] font-bold uppercase tracking-wider mb-2 inline-block">Promo of the week</span>
-          <h2 className="text-3xl font-extrabold mb-4 leading-tight">Get 25% Off at<br />KFC Legon</h2>
+          <h2 className="text-3xl font-extrabold mb-4 leading-tight">Get 25% Off at<br />Chicken Man 🐔</h2>
           <Link to="/vendors" className="px-6 py-2 bg-white text-primary-600 font-bold rounded-xl text-sm hover:shadow-lg transition-all active:scale-95">
             Order Now
           </Link>
