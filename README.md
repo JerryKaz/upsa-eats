@@ -132,13 +132,3 @@ This project was built as a demo campus food delivery platform to showcase:
 * Vendor management system
 
 ---
-
-## Author
-
-### Jerry Myron
-
-Student Developer at UPSA
-
-GitHub: [https://github.com/JerryKaz](https://github.com/JerryKaz)
-
----
