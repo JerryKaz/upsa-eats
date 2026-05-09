@@ -20,6 +20,20 @@ UPSA Eats is a modern campus food ordering system that allows students to browse
 * User profile and orders page
 
 ---
+## Screenshots
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/8d94beaf-ed52-4093-b0ea-1c8a9ddbf7b0" width="45%" />
+  <img src="https://github.com/user-attachments/assets/01ff374e-91b6-4ae7-a236-d0db7b01d61b" width="45%" />
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/7167cd5a-f87a-47d9-b358-31ad2dca2972" width="45%" />
+  <img src="https://github.com/user-attachments/assets/25cab995-3a63-465b-a1f0-0b2e349aceca" width="45%" />
+</p>
+
+
+---
 
 ## Tech Stack
 
@@ -41,20 +55,7 @@ UPSA Eats is a modern campus food ordering system that allows students to browse
 * Sonner
 
 ---
-## Screenshots
 
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/8d94beaf-ed52-4093-b0ea-1c8a9ddbf7b0" width="45%" />
-  <img src="https://github.com/user-attachments/assets/01ff374e-91b6-4ae7-a236-d0db7b01d61b" width="45%" />
-</p>
-
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/7167cd5a-f87a-47d9-b358-31ad2dca2972" width="45%" />
-  <img src="https://github.com/user-attachments/assets/25cab995-3a63-465b-a1f0-0b2e349aceca" width="45%" />
-</p>
-
-
----
 
 ## Installation
 
