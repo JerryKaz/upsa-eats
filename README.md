@@ -142,7 +142,3 @@ Student Developer at UPSA
 GitHub: [https://github.com/JerryKaz](https://github.com/JerryKaz)
 
 ---
-
-## License
-
-This project is for educational and portfolio purposes.
