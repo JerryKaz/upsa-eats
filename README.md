@@ -55,8 +55,23 @@ UPSA Eats is a modern campus food ordering system that allows students to browse
 * Sonner
 
 ---
+## System Architecture design.
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/feca4be5-a33e-463e-b9b7-ce8d1f40a2f0" width="45%" />
+  <img src="https://github.com/user-attachments/assets/4a844431-ef90-42fd-a822-e8b96f14d5ef " width="45%" />
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/4ee7edfe-f753-42e6-a209-f54f17683e49" width="45%" />
+  <img src="https://github.com/user-attachments/assets/a6707fde-6cad-48a8-8aa7-36ccfb529b3e" width="45%" />
+    <img src="https://github.com/user-attachments/assets/478490f6-9e39-499f-8efa-cac320bbc271 " width="45%" />
+</p>
 
 
+
+
+
+---
 ## Installation
 
 Clone the repository:
